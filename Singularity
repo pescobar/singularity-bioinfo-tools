@@ -14,15 +14,15 @@ From: continuumio/miniconda3
 
     # install some bioinfo tools from Bioconda
     conda install --yes -c bioconda samtools==1.9
-    conda install --yes -c bioconda fastqc==0.11.4
+    conda install --yes -c bioconda fastqc==0.11.8
     conda install --yes -c bioconda trimmomatic==0.38
     conda install --yes -c bioconda rseqc==2.6.4
-    conda install --yes -c bioconda star==2.6.0c
+    conda install --yes -c bioconda star==2.6.1b
     conda install --yes -c bioconda salmon==0.11.3
-    conda install --yes -c bioconda kallisto==0.43.1
-    #conda install --yes -c bioconda htseq==0.6.1
+    conda install --yes -c bioconda kallisto==0.44.0
     conda install --yes -c bioconda htseq==0.9.1
-    conda install --yes -c bioconda sra-tools==2.8.1
+    conda install --yes -c bioconda sra-tools==2.9.1_1
+    conda install --yes -c bioconda subread==1.6.2
 
 %environment
     export PATH=/opt/conda/bin:$PATH
