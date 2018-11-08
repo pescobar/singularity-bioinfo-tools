@@ -31,6 +31,32 @@ From: continuumio/miniconda3
 %apprun samtools
     samtools "$@"
 
-%apprun bwa
-    bwa "$@"
+%apprun fastqc
+    fastqc "$@"
 
+%apprun trimmomatic
+    trimmomatic "@"
+
+%apprun STAR
+    START "@"
+
+%apprun STARlong
+    STARTlong "@"
+
+%apprun salmon
+    salmon "@"
+
+%apprun kallisto
+    kallisto "@"
+
+%apprun htseq-count
+    htseq-count "@"
+
+%apprun htseq-qa
+    htseq-qa "@"
+
+%apprun sra-sort
+    sra-sort "@"
+
+%apprun sra-stat
+    sra-stat "@"
