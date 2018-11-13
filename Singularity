@@ -23,6 +23,7 @@ From: continuumio/miniconda3
     conda install --yes -c bioconda htseq==0.9.1
     conda install --yes -c bioconda sra-tools==2.9.1_1
     conda install --yes -c bioconda subread==1.6.2
+    conda install --yes -c bioconda multiqc==1.6a0
 
 %environment
     export PATH=/opt/conda/bin:$PATH
@@ -60,3 +61,6 @@ From: continuumio/miniconda3
 
 %apprun sra-stat
     sra-stat "@"
+
+%apprun multiqc
+    multiqc "@"
