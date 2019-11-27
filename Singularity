@@ -13,17 +13,20 @@ From: continuumio/miniconda3
     conda config --add channels bioconda
 
     # install some bioinfo tools from Bioconda
-    conda install --yes -c bioconda samtools==1.9
-    conda install --yes -c bioconda fastqc==0.11.8
-    conda install --yes -c bioconda trimmomatic==0.38
-    conda install --yes -c bioconda rseqc==2.6.4
-    conda install --yes -c bioconda star==2.6.1b
-    conda install --yes -c bioconda salmon==0.11.3
-    conda install --yes -c bioconda kallisto==0.44.0
-    conda install --yes -c bioconda htseq==0.9.1
-    conda install --yes -c bioconda sra-tools==2.9.1_1
-    conda install --yes -c bioconda subread==1.6.2
-    conda install --yes -c bioconda multiqc==1.6a0
+    # to force the app version use appname==1.1.1
+    conda install --yes -c bioconda samtools
+    conda install --yes -c bioconda fastqc
+    conda install --yes -c bioconda trimmomatic
+    conda install --yes -c bioconda rseqc
+    conda install --yes -c bioconda star
+    conda install --yes -c bioconda salmon
+    conda install --yes -c bioconda kallisto
+    conda install --yes -c bioconda htseq
+    conda install --yes -c bioconda sra-tools
+    conda install --yes -c bioconda subread
+    conda install --yes -c bioconda multiqc
+    conda install --yes -c bioconda bedtools
+    conda install --yes -c bioconda gffread
 
 %environment
     export PATH=/opt/conda/bin:$PATH
@@ -64,3 +67,9 @@ From: continuumio/miniconda3
 
 %apprun multiqc
     multiqc "@"
+
+%apprun bedtools
+    bedtools "@"
+
+%apprun gffread
+    gffread "@"
