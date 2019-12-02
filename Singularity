@@ -53,16 +53,16 @@ From: continuumio/miniconda3
 %apprun kallisto
     kallisto "@"
 
-%apprun htseq-count
+%apprun htseq_count
     htseq-count "@"
 
-%apprun htseq-qa
+%apprun htseq_qa
     htseq-qa "@"
 
-%apprun sra-sort
+%apprun sra_sort
     sra-sort "@"
 
-%apprun sra-stat
+%apprun sra_stat
     sra-stat "@"
 
 %apprun multiqc
